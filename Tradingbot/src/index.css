@@ -1,0 +1,25 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #08080f;
+  color: #dde1f0;
+  min-height: 100vh;
+  font-size: 14px;
+}
+
+input, select, textarea { font-family: inherit; }
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: #08080f; }
+::-webkit-scrollbar-thumb { background: #2a2a40; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #f59e0b; }
+
+::selection { background: rgba(245,158,11,0.25); color: #fff; }
+
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+.fade-in { animation: fadeIn 0.3s ease-out; }
